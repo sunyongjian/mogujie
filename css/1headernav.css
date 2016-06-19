@@ -1,0 +1,374 @@
+html, body {
+    color: #333;
+    height: 150%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.clearfix:after {
+    content: "";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden
+}
+
+.rightBar {
+    position: fixed;
+    right: 0;
+    height: 100%;
+    z-index: 9999;
+    top: 0;
+    width: 30px;
+    color: #fff;
+    font-size: 12px;
+    background: #202020;
+}
+
+.header {
+    margin-bottom: 0;
+    background: #f2f2f2;
+    border-bottom: 1px solid #ddd;
+    height: 31px;
+    line-height: 31px;
+    font: 12px tahoma, arial, sans-serif;
+
+}
+
+.wrap {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.wrap .home {
+    display: none;
+    background: url("http://s6.mogucdn.com/pic/140808/o613k_ieygizrthfrdgyzymiytambqgqyde_15x26.png") no-repeat 0 -5px;
+    padding: 0 20px;
+    display: inline-block;
+    height: 30px;
+    line-height: 30px;
+    vertical-align: top;
+    margin-left: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+.header_top {
+    float: right;
+
+}
+
+.header_top .s1 {
+    display: inline;
+    position: relative;
+    z-index: 100;
+    float: left;
+    margin: 0 15px 0 0;
+    height: 31px;
+}
+
+.header_top .s1 a {
+    float: left;
+    overflow: hidden;
+    margin-top: 8px;
+    color: #666;
+    line-height: 14px;
+    font: 12px tahoma, arial, sans-serif;
+}
+
+.header_top .top_icon1 {
+    background: url("http://s17.mogucdn.com/p1/150923/upload_ie2wmzdehazwkztdgmzdambqhayde_100x400.png") no-repeat;
+    background-position: 18px -212px;
+}
+
+.header_top .top_icon1 > a {
+    padding-left: 38px;
+    border-left: 1px solid #ddd;
+}
+
+.header_top .top_icon2 {
+    position: relative;
+    background: url("http://s17.mogucdn.com/p1/150923/upload_ie2wmzdehazwkztdgmzdambqhayde_100x400.png") no-repeat;
+
+    background-position: 12px -104px;
+}
+
+.header_top .top_icon2 > a {
+    padding-left: 40px;
+    border-left: 1px solid #ddd;
+
+}
+
+.top_icon2 .shoppingCar {
+    position: absolute;
+    display: none;
+    top: 31px;
+    z-index: 5;
+    right: 0;
+    left: -90px;
+    width: 200px;
+    padding: 15px;
+    color: #424242;
+    background: #f2f2f2;
+    border-radius: 0 0 5px 5px;
+    border: 1px solid #ddd;
+    border-top: none;
+    text-align: center;
+}
+
+.header_top .top_icon2:hover .shoppingCar {
+    display: block;
+}
+
+.header_top .top_i3 {
+    position: relative;
+}
+
+.header_top .top_i3 > a {
+    padding: 0 10px 0 20px;
+    border-left: 1px solid #dddddd;
+}
+
+.header_top .top_i3 .icon3 {
+    position: absolute;
+    width: 7px;
+    height: 5px;
+    top: 14px;
+    right: 0;
+    background: url("http://s6.mogucdn.com/pic/140808/o613k_ieygizrthfrdgyzymiytambqgqyde_15x26.png") 0 0;
+}
+
+.header_top .top_i3 .serverMenu {
+    display: none;
+    position: absolute;
+    width: 90px;
+    top: 31px;
+    left: 0;
+    line-height: 20px;
+    text-align: center;
+    background: #eee;
+    border: 1px solid #ddd;
+    border-top: none;
+    border-radius: 0 0 3px 3px;
+}
+
+.header_top .top_i3 .serverMenu li {
+    line-height: 30px;
+}
+
+.header_top .top_i3:hover .serverMenu {
+    display: block;
+}
+
+.header_top .top_icon4 {
+    position: relative;
+    margin-right: 0;
+    background: url("http://s17.mogucdn.com/p1/150923/upload_ie2wmzdehazwkztdgmzdambqhayde_100x400.png") no-repeat;
+    background-position: 11px -250px;
+}
+
+.header_top .top_icon4 > a {
+    padding: 0 10px 0 35px;
+    border-left: 1px solid #dddddd;
+}
+
+.header_top .top_icon4 .icon4 {
+    position: absolute;
+    width: 7px;
+    height: 5px;
+    top: 14px;
+    right: 0;
+    background: url("http://s6.mogucdn.com/pic/140808/o613k_ieygizrthfrdgyzymiytambqgqyde_15x26.png") 0 0;
+}
+
+.header_top .top_icon4 .xiaodianMenu {
+    display: none;
+
+    position: absolute;
+    left: 0;
+    top: 31px;
+    width: 90px;
+}
+
+.header_top .top_icon4 .xiaodianMenu li {
+    line-height: 30px;
+    text-align: center;
+    background: #eee;
+    border-top: none;
+    border-radius: 0 0 3px 3px;
+}
+
+.header_top .top_icon4:hover .xiaodianMenu {
+    display: block;
+}
+
+/*以下是 header mid  logo等 */
+.header_mid{
+    height: 144px;
+}
+.header_mid .logo {
+    float: left;
+    width: 250px;
+    height: 60px;
+    margin-top: 37px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    text-indent: -999em;
+    background: url("http://s16.mogucdn.com/p1/160411/upload_ie4denjsgzrdqyleg4zdambqgiyde_207x51.png") no-repeat;
+}
+
+.header_mid .topNav_search {
+    position: relative;
+    z-index: 50;
+    float: left;
+    width: 502px;
+    margin: 40px 0 0 99px;
+    font: 12px/1.6 tahoma, arial, sans-serif;
+}
+
+.topNav_search .search_inner_box {
+    border: 1px solid #3a3a3a;
+}
+
+.topNav_search .search_inner_box .selectBox {
+    position: relative;
+    float: left;
+    width: 70px;
+}
+
+.topNav_search .search_inner_box .selectBox span {
+    display: block;
+    height: 33px;
+    line-height: 32px;
+    padding-left: 12px;
+    color: #666;
+    cursor: pointer;
+    background-color: #fff;
+    border-radius: 4px 0 0 4px;
+    background-image: url("http://s16.mogucdn.com/p1/150918/upload_ieytszrsgaytmm3cgmzdambqmeyde_100x400.png");
+    background-repeat: no-repeat;
+    background-position: 51px -17px;
+}
+
+.topNav_search .search_inner_box .selectBox ol {
+    display: none;
+    position: absolute;
+    top: 33px;
+    left: -1px;
+    width: 70px;
+    background: #fff;
+    border: 1px solid #cecece;
+    border-top: 1px solid #3a3a3a;
+
+}
+.topNav_search .search_inner_box .selectBox ol a{
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    overflow: hidden;
+    color: #666;
+    text-align: center;
+}
+
+
+.topNav_search .search_inner_box #top_nav_form {
+    display: block;
+
+}
+
+.topNav_search .search_inner_box #top_nav_form .search_book {
+    float: left;
+    height: 21px;
+    line-height: 20px;
+    padding: 6px 10px 6px 6px;
+    width: 344px;
+    border: none;
+    outline: none;
+    color: #999;
+    font-size: 12px;
+}
+.topNav_search .search_inner_box .top_search_div{
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 33px;
+    width: 500px;
+    z-index: 999;
+    font-size: 12px;
+    background-color: #fff;
+    border: 1px solid #cecece;
+    border-top: 1px solid #3a3a3a;
+}
+.topNav_search .search_inner_box .top_search_div .mr300{
+    min-height: 286px;
+    _height: 286px;
+    background-color: #fff;
+}
+.topNav_search .search_inner_box .top_search_div .mr300 .search_tip_title{
+    padding: 10px 0 0 10px;
+    height: 16px;
+    line-height: 16px;
+    color: #999;
+    font-weight: 400;
+    font-size: 12px;
+
+}
+.topNav_search .search_inner_box #top_nav_form .search_btn {
+    float: left;
+    overflow: hidden;
+    height: 33px;
+    width: 70px;
+    background-color: #3a3a3a;
+    border: none;
+    color: white;
+    cursor: pointer;
+    background-image: url("http://s16.mogucdn.com/p1/150918/upload_ieytszrsgaytmm3cgmzdambqmeyde_100x400.png");
+    background-repeat: no-repeat;
+    background-position: 27px -57px;
+    text-indent: -999em; /* 把input 里面的字弄没了*/
+}
+
+.topNav_search .search_inner_box #top_nav_form:after {
+    clear: both;
+    content: "";
+    display: block;
+}
+
+.topNav_search .hotWords {
+    margin-top: 5px;
+    margin-left: -10px;
+    white-space: nowrap;
+    width: 518px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.topNav_search .hotWords a {
+    color: #999;
+    padding: 0 0 0 16px;
+}
+
+.header_mid .nav_2code {
+    background: url("http://s16.mogucdn.com/p1/160321/upload_ifrdgmrwga3gizrwg4zdambqmeyde_251x144.gif") no-repeat;
+    height: 144px;
+    width: 251px;
+    float: right;
+    position: relative;
+    margin-top: 0;
+}
+
+.header_mid .nav_2code img {
+    position: absolute;
+    z-index: 10;
+    left: 105px;
+    top: 57px;
+
+}

@@ -1,0 +1,9 @@
+[
+{"img":"img/primarybanner1.jpg","desc":"蘑菇街，我的买手街！"},
+{"img":"img/primarybanner2.jpg","desc":"蘑菇街，我的买手街！"},
+{"img":"img/primarybanner3.png","desc":"蘑菇街，我的买手街！"},
+{"img":"img/primarybanner4.jpg","desc":"蘑菇街，我的买手街！"},
+{"img":"img/primarybanner5.jpg","desc":"蘑菇街，我的买手街！"},
+{"img":"img/primarybanner6.jpg","desc":"蘑菇街，我的买手街！"}
+
+]
